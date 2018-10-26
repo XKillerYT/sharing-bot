@@ -15,4 +15,4 @@ https://discord.gg/V7QJNaw
 **`) 
 }).catch(console.error)
 })
-A7MD.login("NDk3NTQ1NjUzMTk1NjM2NzU5.DrTeTA.kh4g1YE9clU9iDtz4EjJsEAuwT0");
+client.login(process.env.BOT_TOKEN);
