@@ -15,4 +15,4 @@ https://discord.gg/V7QJNaw
 **`) 
 }).catch(console.error)
 })
-client.login(process.env.BOT_TOKEN);
+A7MD.login(process.env.BOT_TOKEN);
