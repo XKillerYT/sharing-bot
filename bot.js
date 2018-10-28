@@ -1,9 +1,23 @@
 const Discord = require('discord.js');
-const A7MD = new Discord.Client();
+const client = new Discord.Client();
 
-console.log("BOT ONLINE");
+console.log("Welcome Again !");
  
-A7MD.on("guildMemberAdd", member => {
+ client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+اقدح على هواك قدحتتا فوق مستواك :crown:
+سيرفرنا الجميل يفتح لكم أبوابه :blush:
+ويسعدنا وجودك بالسيرفر ياعسل :penguin:
+https://discord.gg/V7QJNaw
+الدعوة خاصة لك يقلبي :fire:  [ ${member}  ]
+**`) 
+}).catch(console.error)
+
+})
+ 
+client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -15,4 +29,4 @@ https://discord.gg/V7QJNaw
 **`) 
 }).catch(console.error)
 })
-A7MD.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
