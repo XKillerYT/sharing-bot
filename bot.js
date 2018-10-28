@@ -1,11 +1,9 @@
 const Discord = require('discord.js');
-const A7MD = new Discord.Client();
+const client = new Discord.Client();
 
-client.on('ready', () => {
 console.log("BOT ONLINE");
- });
-
-A7MD.on("guildMemberAdd", member => {
+ 
+client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -17,4 +15,4 @@ https://discord.gg/V7QJNaw
 **`) 
 }).catch(console.error)
 })
-A7MD.login(process.env.BOT_TOKEN);
+client.login("NDk3NTQ1NjUzMTk1NjM2NzU5.DrTeTA.kh4g1YE9clU9iDtz4EjJsEAuwT0");
